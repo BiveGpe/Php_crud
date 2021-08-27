@@ -9,8 +9,8 @@
 <body>
     <h1>CRUD</h1>
     <a href="create.php">Dodawanie</a><br><br>
-    <a href="del.php">Usuwanie rekordów</a><br>
-    <a href="mod.php">Usuwanie rekordów</a><br>
+    <a href="del.php">Usuwanie rekordów</a><br><br>
+    <a href="mod.php">Edytowanie rekordów</a><br>
 
 </body>
 </html>

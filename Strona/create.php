@@ -7,7 +7,29 @@
     <title>Dodawanie rekordów</title>
 </head>
 <body>
-    <h1>Dodawanie rekordów</h1>
+    <h1>Podgląd</h1>
+    <table>
+        <thead>
+            <tr>id </tr>
+            <tr>imie </tr>
+            <tr>lokalizacja </tr>
+        </thead>
+    <?php
+        require_once "config.php";
+
+        $sql_view = "SELECT * FROM dane";
+        $result = $mysqli->query($sql_view);
+        while($row = $result->fetch_array()){ ?>
+
+        <tr>
+            <td><?php echo $row['id']; ?></td>
+            <td><?php echo $row['imie']; ?></td>
+            <td><?php echo $row['lokalizacja']; ?></td>
+        </tr>
+        <?php } ?>
+    </table>
+
+    <h1>Dodawanie</h1>
 
     <?php
         require_once "config.php";

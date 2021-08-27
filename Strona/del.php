@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Usuwanie</title>
 </head>
 <body>
     <h1>Podgląd</h1>
@@ -29,7 +29,7 @@
         <?php } ?>
     </table>
 
-    <h3>Usuń rekord</h3>
+    <h1>Usuń rekord</h1>
 
     <form action="view.php" method="get">
         <legend>Wpisz ID</legend>
