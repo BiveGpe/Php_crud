@@ -16,7 +16,7 @@
         $lokalizacja;
 
 
-        if($_POST['imie'] && $_POST['lokalizacja'] != NULL) // Jeżeli wypełnił formularz
+        if(isset($_POST['submit']) and $_POST['imie'] && $_POST['lokalizacja'] != NULL) // Jeżeli wypełnił formularz
         {
             $imie = $_POST['imie'];
             $lokalizacja = $_POST['lokalizacja']; // pobranie danych z POST
