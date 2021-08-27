@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    Strona
+    <?php require_once 'proces.php'; ?>
+
+    <?php
+     $mysqli = new mysqli('localhost', 'root', '', 'crud') or die(mysqli_error($mysqli));
+     $rekord = $mysqli->query("SELECT * FROM dane") or die(mysqli_error($mysqli));
+    ?>
+
+    <form action="proces.php" method="POST">
+        <p>Imie: <input type="text" name="imie" id=""></p>
+        <p>Lokalizacja: <input type="text" name="lokalizacja" id=""></p>
+        <input type="submit" value="Zapisz" name="submit1">
+    </form>
 </body>
 </html>
