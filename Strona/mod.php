@@ -32,9 +32,11 @@
     <h3>Edytuj Rekord</h3>
 
     <form action="mod.php" method="get">
-        <legend>Wpisz ID</legend>
-        <input type="number" name="id">
-        <input type="submit" name="submit" value="usuń">
+        <legend>Dane</legend>
+        ID: <br><input type="number" name="id"><br>
+        Imie:<br><input type="text" name="imie"><br>
+        Lokalizacja:<br><input type="text" name="lokalizacja"><br>
+        <br><input type="submit" name="submit" value="edytuj">
     </form>
 
     <?php
@@ -44,10 +46,13 @@
         {
             
             $id = $_GET['id'];
-            $sql_del = "DELETE FROM dane WHERE id=$id";
-            if($mysqli->query($sql_del) == true);
+            $imie = $_GET['imie'];
+            $lokalizacja = $_GET['lokalizacja'];
+            $sql_up = "UPDATE dane SET imie = '$imie', lokalizacja = '$lokalizacja' WHERE id = $id";
+
+            if($mysqli->query($sql_up) == true);
             {
-                echo "usunięto rekord";
+                echo "Zedytowano rekord";
             }
         }
     ?>
