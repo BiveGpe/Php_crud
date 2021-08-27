@@ -31,7 +31,7 @@
 
     <h3>Edytuj Rekord</h3>
 
-    <form action="view.php" method="get">
+    <form action="mod.php" method="get">
         <legend>Wpisz ID</legend>
         <input type="number" name="id">
         <input type="submit" name="submit" value="usuń">

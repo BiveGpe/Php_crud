@@ -31,7 +31,7 @@
 
     <h1>Usuń rekord</h1>
 
-    <form action="view.php" method="get">
+    <form action="del.php" method="get">
         <legend>Wpisz ID</legend>
         <input type="number" name="id">
         <input type="submit" name="submit" value="usuń">
